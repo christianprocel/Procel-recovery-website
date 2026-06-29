@@ -114,21 +114,29 @@ details p { margin: 16px 0 0; }
   .site-footer { flex-direction: column; }
   h1 { font-size: clamp(2.65rem, 14vw, 4rem); }
 }
+
 .hero-card > img {
-  filter: drop-shadow(0 0 10px rgba(104, 238, 232, 0.45))
-          drop-shadow(0 0 24px rgba(104, 238, 232, 0.22));
-  animation: logoPulse 4s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 12px rgba(0, 255, 255, 0.8))
+    drop-shadow(0 0 30px rgba(0, 255, 255, 0.6))
+    drop-shadow(0 0 60px rgba(0, 255, 255, 0.4));
+  animation: logoPulse 2.5s ease-in-out infinite;
 }
 
 @keyframes logoPulse {
   0%, 100% {
-    filter: drop-shadow(0 0 8px rgba(104, 238, 232, 0.35))
-            drop-shadow(0 0 20px rgba(104, 238, 232, 0.16));
+    filter:
+      drop-shadow(0 0 10px rgba(0, 255, 255, 0.7))
+      drop-shadow(0 0 25px rgba(0, 255, 255, 0.5))
+      drop-shadow(0 0 45px rgba(0, 255, 255, 0.3));
     transform: scale(1);
   }
+
   50% {
-    filter: drop-shadow(0 0 16px rgba(104, 238, 232, 0.65))
-            drop-shadow(0 0 38px rgba(104, 238, 232, 0.32));
-    transform: scale(1.015);
+    filter:
+      drop-shadow(0 0 20px rgba(0, 255, 255, 1))
+      drop-shadow(0 0 45px rgba(0, 255, 255, 0.9))
+      drop-shadow(0 0 80px rgba(0, 255, 255, 0.7));
+    transform: scale(1.03);
   }
 }
