@@ -233,7 +233,7 @@ details p { margin: 16px 0 0; }
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:2rem;
-    margin-top:2rem;
+    margin-top:3rem;
 }
 
 .card{
@@ -271,4 +271,18 @@ details p { margin: 16px 0 0; }
 .card .button{
     margin:0 1.25rem 1.5rem;
     display:inline-block;
+}
+.section-heading p{
+    font-size:1.15rem;
+    line-height:1.8;
+    max-width:850px;
+    color:#d8e6e2;
+}
+.section-heading h2{
+    font-size:3.6rem;
+    margin-bottom:1rem;
+}
+.card .button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(95,242,208,.35);
 }
