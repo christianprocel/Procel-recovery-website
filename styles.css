@@ -140,3 +140,91 @@ details p { margin: 16px 0 0; }
     transform: scale(1.02);
   }
 }
+/* ==========================
+   MEMBERSHIP SECTION
+========================== */
+
+.membership{
+    background:#0d0d0d;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.membership-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:3rem;
+    align-items:center;
+    margin-top:3rem;
+}
+
+.membership-image img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+    display:block;
+}
+
+.membership-details{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.price-box{
+    background:#111;
+    border:2px solid #12d7e8;
+    border-radius:18px;
+    padding:2rem;
+}
+
+.price-box h3{
+    margin:0;
+    font-size:3rem;
+    color:#12d7e8;
+}
+
+.price-box span{
+    font-size:1.3rem;
+    color:#ffffff;
+}
+
+.price-box p{
+    margin-top:1rem;
+    color:#d7d7d7;
+}
+
+.membership-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.membership-list li{
+    padding:.8rem 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+#membership .button{
+    width:fit-content;
+    padding:16px 36px;
+}
+
+@media(max-width:900px){
+
+    .membership-grid{
+        grid-template-columns:1fr;
+    }
+
+    .membership-image{
+        order:1;
+    }
+
+    .membership-details{
+        order:2;
+    }
+
+    .price-box h3{
+        font-size:2.3rem;
+    }
+
+}
