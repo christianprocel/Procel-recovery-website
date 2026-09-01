@@ -286,3 +286,32 @@ details p { margin: 16px 0 0; }
     transform:translateY(-2px);
     box-shadow:0 8px 20px rgba(95,242,208,.35);
 }
+.about-profile{
+  display:grid;
+  grid-template-columns:minmax(240px, 340px) 1fr;
+  gap:2rem;
+  align-items:center;
+}
+
+.about-photo{
+  max-width:340px;
+}
+
+.about-photo img{
+  width:100%;
+  max-width:340px;
+  height:auto;
+  display:block;
+  border-radius:20px;
+}
+
+@media (max-width: 900px){
+  .about-profile{
+    grid-template-columns:1fr;
+  }
+
+  .about-photo{
+    max-width:260px;
+    margin:0 auto;
+  }
+}
